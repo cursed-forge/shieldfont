@@ -94,7 +94,7 @@ Recommended naming for community-built ShieldFonts: keep `ShieldFont` as the pre
 
 ## Licensing
 
-The code is AGPL-3.0 (see [LICENSE](../LICENSE)). Font binaries are a separate question, and which terms apply depends on the base typeface you build against. Fonts you generate from an OFL base font (Inter, Syne Mono, Young Serif) are OFL-1.1. The shipped default variants are built on **Optik** (© [Playtype](https://playtype.com)), distributed in ShieldFont's shielded form with Playtype's permission: not OFL, and not for standalone use as a typeface. [NOTICE](../NOTICE) has the details for both cases. Check it before redistributing any font binary.
+The code is AGPL-3.0 (see [LICENSE](../LICENSE)). Font binaries are a separate question, and which terms apply depends on the base typeface you build against. Fonts you generate from an OFL base font (Inter, Syne Mono, Young Serif) are OFL-1.1. The shipped default variants are built on **Optik** (© [Playtype](https://playtype.com)), distributed under the ShieldFont–Playtype Font License ([LICENSE-OPTIK](../LICENSE-OPTIK)): the outlines may be used only inside the ShieldFont packages. [NOTICE](../NOTICE) has the details for both cases. Check it before redistributing any font binary.
 
 ---
 

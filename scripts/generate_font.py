@@ -1049,7 +1049,16 @@ def main():
                         "(nameID 16, then 1), so the input font's name carries through.")
     parser.add_argument("--prefix", help="Output file prefix → public/fonts/<prefix>.{ttf,woff2,css}. "
                         "OPTIONAL — when omitted, it is a slug of the (derived or given) family name.")
-    parser.add_argument("--copyright", default="Modified as ShieldFont.", help="Copyright notice")
+    parser.add_argument("--copyright", default="Modified as ShieldFont.",
+                        help="Copyright notice. Optik builds must pass the line Playtype "
+                             "approved: \"Copyright 2026 Optik Playtype\".")
+    parser.add_argument("--license-text",
+                        help="License description text for nameID 13. OPTIONAL — when "
+                             "omitted, any license records (13/14) already in the base "
+                             "font pass through unchanged. Optik builds must pass the "
+                             "ShieldFont–Playtype Font License notice (see LICENSE-OPTIK).")
+    parser.add_argument("--license-url",
+                        help="License URL for nameID 14. See --license-text.")
     parser.add_argument("--weight", type=int, choices=sorted(WEIGHT_SUBFAMILY),
                         help="Numeric weight of the SOURCE cut (400..900). VERIFIED against the "
                              "base font's OS/2 usWeightClass — the build fails on a mismatch so a "
@@ -1396,9 +1405,22 @@ def main():
         16: args.name,
         17: subfamily,
     }
+    if args.license_text:
+        name_replacements[13] = args.license_text
+    if args.license_url:
+        name_replacements[14] = args.license_url
     for name_record in name_table.names:
         if name_record.nameID in name_replacements:
             name_record.string = name_replacements[name_record.nameID]
+    # A base font may carry no license records at all: add them when the
+    # caller supplied the values, instead of silently shipping the base
+    # font's (possibly retail) license. Windows-platform records match the
+    # records the base fonts in this repo carry.
+    existing_ids = {name_record.nameID for name_record in name_table.names}
+    if args.license_text and 13 not in existing_ids:
+        name_table.setName(args.license_text, 13, 3, 1, 0x409)
+    if args.license_url and 14 not in existing_ids:
+        name_table.setName(args.license_url, 14, 3, 1, 0x409)
     print(f"[OK] Renamed font to '{full_name}'")
 
     # Build/merge GSUB with word-boundary chained context. Each ligature only

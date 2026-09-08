@@ -23,13 +23,13 @@ The **no-build / CDN** distribution of ShieldFont: the web fonts, a paste-in
 
 ```html
 <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@shieldfont/font@0.3.5/shieldfont.css">
+      href="https://cdn.jsdelivr.net/npm/@shieldfont/font@0.4.0/shieldfont.css">
 ```
 or in your CSS:
 ```css
-@import url("https://cdn.jsdelivr.net/npm/@shieldfont/font@0.3.5/shieldfont.css");
+@import url("https://cdn.jsdelivr.net/npm/@shieldfont/font@0.4.0/shieldfont.css");
 ```
-Always pin the version (`@0.3.5`), never `@latest`: a site that paste-installs a
+Always pin the version (`@0.4.0`), never `@latest`: a site that paste-installs a
 URL is pinned to whatever it pasted.
 
 ## Three steps
@@ -116,7 +116,7 @@ visitor.
 <!-- An authoring tool: paste text, copy the encoded result into your CMS. -->
 <script type="module">
   import { encode, alpha } from
-    "https://cdn.jsdelivr.net/npm/@shieldfont/font@0.3.5/shieldfont-encoder.js";
+    "https://cdn.jsdelivr.net/npm/@shieldfont/font@0.4.0/shieldfont-encoder.js";
   document.querySelector("#out").textContent = encode("Your text here", alpha);
 </script>
 ```
@@ -144,11 +144,11 @@ visitor.
 
 Every font file self-reports its generation in the name table
 (nameID 5 reads `Version 18.0`, the mapping generation the font was built
-against). This npm package is versioned separately: currently `0.3.5`.
+against). This npm package is versioned separately: currently `0.4.0`.
 
 ## License
 
-Code: **AGPL-3.0-or-later** (`LICENSE`). Fonts: **Optik, © Playtype, used under
-the ShieldFont–Playtype partnership.** The bundled default variants are **not**
-under OFL (see `NOTICE`). SIL OFL 1.1 (`LICENSE-FONTS`) applies only to fonts you
-build yourself from the OFL base fonts.
+Code: **AGPL-3.0-or-later** (`LICENSE`). Fonts: **Optik, © Playtype, under the
+ShieldFont–Playtype Font License** (`LICENSE-OPTIK`): the outlines may be used
+only inside the ShieldFont packages. SIL OFL 1.1 (`LICENSE-FONTS`) applies
+only to fonts you build yourself from the OFL base fonts.

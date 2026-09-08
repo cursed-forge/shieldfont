@@ -1,7 +1,7 @@
 {
   "//": "On the wording of commit 50311c1, see the message of the commit that added this line.",
   "name": "shieldfont-monorepo",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "private": true,
   "description": "ShieldFont packages — encoding pipeline for the AI-scraping-resistant web font",
   "workspaces": [

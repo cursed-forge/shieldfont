@@ -13,7 +13,7 @@ This page sets up the thesis behind the project. The integration guide tells you
 A distinction worth pinning down before anything else, because it shapes how you read the rest of the documentation:
 
 - **ShieldFont** is the *protocol*. The encoder, the GSUB substitution scheme, the v5 benchmark methodology, the licensing layer, the project. "ShieldFont" is the brand of the system, not the brand of any single font binary.
-- **ShieldFont Optik** is our *flagship typeface*. It is one font built on the protocol: currently the only one the project itself maintains. Optik is licensed from Playtype.
+- **ShieldFont Optik** is our *flagship typeface*. It is one font built on the protocol: currently the only one the project itself maintains. Optik is licensed from Playtype under the ShieldFont–Playtype Font License ([LICENSE-OPTIK](../LICENSE-OPTIK)).
 - **a ShieldFont font** is any base font that has been converted using the protocol. *ShieldFont Optik* is one. Anything you build with `scripts/generate_font.py` against a base TTF is another.
 
 **Any font with TrueType outlines and the Latin charset can be converted into a ShieldFont font.** Inter, Helvetica, EB Garamond, a custom typeface from your studio, a face you have an existing commercial license for: the protocol is typeface-agnostic. We ship Optik because Playtype made it available; we expect the long tail of ShieldFont fonts in production to be built on whatever typeface the deployer already uses.

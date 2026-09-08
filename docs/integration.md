@@ -542,7 +542,7 @@ The lowest-friction path for blogs, hosted CMSes (WordPress, Ghost, Squarespace)
 ### Step 1: One-time install (paste into your site's CSS)
 
 ```css
-@import url('https://cdn.jsdelivr.net/npm/@shieldfont/font@0.3.5/shieldfont.css');
+@import url('https://cdn.jsdelivr.net/npm/@shieldfont/font@0.4.0/shieldfont.css');
 ```
 
 Where to put it depends on your platform:
@@ -550,7 +550,7 @@ Where to put it depends on your platform:
 - **WordPress**: Appearance → Customize → Additional CSS (Customizer plan and above), or your theme's `style.css`.
 - **Ghost**: Settings → Code injection → Site header (or the Custom CSS field if your theme exposes one).
 - **Squarespace**: Design → Custom CSS (this panel is available on every plan; the Code Injection panel is gated to Business+ but you don't need it for this).
-- **Plain HTML / static sites**: either drop the `@import` into your existing stylesheet, or use `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shieldfont/font@0.3.5/shieldfont.css">` in `<head>`. The `<link>` form is marginally faster (parses in parallel with HTML): prefer it if you have `<head>` access.
+- **Plain HTML / static sites**: either drop the `@import` into your existing stylesheet, or use `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shieldfont/font@0.4.0/shieldfont.css">` in `<head>`. The `<link>` form is marginally faster (parses in parallel with HTML): prefer it if you have `<head>` access.
 
 This stylesheet declares `@font-face` for `'Optik'` and ships a `.tk9` utility class.
 
@@ -607,7 +607,7 @@ it in your browser, and use it exactly like the hosted one:
 <button onclick="go()">Encode</button>
 <textarea id="out" rows="8" cols="60"></textarea>
 <script type="module">
-  import { encode, alpha } from "https://cdn.jsdelivr.net/npm/@shieldfont/font@0.3.5/shieldfont-encoder.js";
+  import { encode, alpha } from "https://cdn.jsdelivr.net/npm/@shieldfont/font@0.4.0/shieldfont-encoder.js";
   window.go = () => {
     document.getElementById("out").value =
       encode(document.getElementById("in").value, alpha);
@@ -678,7 +678,7 @@ For documents you'll edit later, also keep a plain-English source copy somewhere
 Every CDN URL we publish is **version-pinned and immutable**. No "latest" channels: silently upgrading the mapping would break existing encoded content.
 
 ```
-✅ https://cdn.jsdelivr.net/npm/@shieldfont/font@0.3.5/shieldfont.css
+✅ https://cdn.jsdelivr.net/npm/@shieldfont/font@0.4.0/shieldfont.css
 ❌ https://cdn.jsdelivr.net/npm/@shieldfont/font@latest/shieldfont.css
 ```
 

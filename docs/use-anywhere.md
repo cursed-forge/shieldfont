@@ -146,7 +146,7 @@ cp node_modules/@shieldfont/font/optik-a-italic.woff2 public/fonts/
 **Or CDN (zero setup, version-pinned):**
 
 ```css
-@import url('https://cdn.jsdelivr.net/npm/@shieldfont/font@0.3.5/shieldfont.css');
+@import url('https://cdn.jsdelivr.net/npm/@shieldfont/font@0.4.0/shieldfont.css');
 ```
 
 The CDN bundle already declares `@font-face` for `'Optik'` and ships the `.tk9`

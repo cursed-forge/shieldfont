@@ -127,7 +127,7 @@ Every bundled mapping carries a `_meta` block, and the package exports its versi
 
 ```ts
 import { VERSION, alpha, mappingMeta } from "@shieldfont/core";
-VERSION;                        // "0.3.5"  (the npm package version)
+VERSION;                        // "0.4.0"  (the npm package version)
 mappingMeta(alpha)?.mappingId;  // "shieldfont-en-v18-alpha@0.1.0"  (the dictionary generation)
 ```
 
@@ -171,8 +171,8 @@ design (a short sentence may change only ~2 of ~11 words).
 ## License
 
 AGPL-3.0-or-later. The project's shipped default variants are built on
-**Optik**, a proprietary typeface © Playtype, used in ShieldFont's shielded
-(word-substitution) form with Playtype's permission: **not** under OFL, and
-not for standalone use as a typeface. Fonts you generate yourself from the OFL
-base fonts (Inter, Syne Mono, Young Serif) ship under the SIL Open Font
-License 1.1. See [NOTICE](./NOTICE).
+**Optik**, © Playtype, under the ShieldFont–Playtype Font License
+([LICENSE-OPTIK](./LICENSE-OPTIK)): the outlines may be used only inside the
+ShieldFont packages. Fonts you generate yourself from the OFL base fonts
+(Inter, Syne Mono, Young Serif) ship under the SIL Open Font License 1.1.
+See [NOTICE](./NOTICE).

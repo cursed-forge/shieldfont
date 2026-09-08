@@ -3,9 +3,9 @@ with Reserved Font Name "ShieldFont".
 
 SCOPE: This SIL Open Font License covers ShieldFont variants generated from
 the OFL base fonts (Inter, Syne Mono, Young Serif). It does NOT cover the
-default variants this project ships built on Optik (a commercial Playtype
-typeface) — those are distributed under separate permission from Playtype,
-for use as part of ShieldFont; see NOTICE for their terms.
+default variants this project ships built on Optik — those are distributed
+under the ShieldFont–Playtype Font License; see LICENSE-OPTIK for their
+terms.
 
 This Font Software is a derivative of base fonts (Inter, Syne Mono, Young
 Serif) that are themselves licensed under the SIL Open Font License.

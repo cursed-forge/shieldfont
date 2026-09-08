@@ -1,0 +1,37 @@
+ShieldFont–Playtype Font License
+Version 1.0 — 3 September 2026
+
+Copyright (c) 2026 Optik Playtype
+
+"Optik" is a Reserved Font Name of Playtype.
+
+This license covers the Optik-derived font files that the ShieldFont project
+distributes. Playtype owns the Optik glyph outlines. Playtype permits their
+distribution inside the ShieldFont project and its packages:
+@shieldfont/core, @shieldfont/font and @shieldfont/react.
+
+1. You may use the font software inside the ShieldFont project and its
+   packages, and in documents, applications and websites that use those
+   packages. This permission covers the font files with the word
+   substitutions active, and without them (for example the neutral cut that
+   the <NonShield> component in @shieldfont/react renders with).
+
+2. You may modify the font software only as part of the ShieldFont project
+   and its packages.
+
+3. You may not extract the Optik glyph outlines, in whole or in part, for
+   use in any other font or product. Such use requires the written
+   permission of Playtype.
+
+4. You must keep this license text and the copyright notice with each copy
+   of the font software that you redistribute.
+
+5. A font that is not distributed inside the ShieldFont packages may not
+   use the names "Optik", "ShieldFont Optik" or "ShieldFont Optik Max" as a
+   family name, unless Playtype gives written permission.
+
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE FONT SOFTWARE.

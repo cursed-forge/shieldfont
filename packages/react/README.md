@@ -527,7 +527,7 @@ Better ideas here are the most useful contribution anyone can make to this proje
 
 ```jsx
 import { VERSION } from "@shieldfont/react";   // re-exported from @shieldfont/core
-console.log(VERSION);   // "0.3.5" — the package version
+console.log(VERSION);   // "0.4.0" — the package version
 ```
 
 Use it to confirm which encoder you're running. It is **not** a dictionary
@@ -540,9 +540,10 @@ inferring it from `VERSION`.
 
 ## License
 
-AGPL-3.0-or-later. The bundled default fonts use **Optik, © Playtype, used
-with Playtype's permission** — whether or not the word substitutions are
-active (which is what allows `<NonShield>`), provided the use stays within
-the ShieldFont packages and tooling. They are **not** under OFL. The SIL Open Font License 1.1 applies only to
-fonts you build yourself from the OFL base fonts (Inter, Syne Mono, Young Serif).
+AGPL-3.0-or-later. The bundled default fonts use **Optik, © Playtype, under
+the ShieldFont–Playtype Font License** ([LICENSE-OPTIK](./LICENSE-OPTIK)) —
+whether or not the word substitutions are active (which is what allows
+`<NonShield>`), provided the use stays within the ShieldFont packages and
+tooling. The SIL Open Font License 1.1 applies only to fonts you build
+yourself from the OFL base fonts (Inter, Syne Mono, Young Serif).
 See [NOTICE](./NOTICE).

@@ -1,7 +1,7 @@
 {
   "//": "On the wording of commit 50311c1, see the message of the commit that added this line.",
   "name": "@shieldfont/font",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "description": "ShieldFont web fonts, paste-in CSS and browser encoder: the no-build CDN distribution, for learning and for pages with no build step. @shieldfont/react is the recommended route for a site you're shipping. A v0 alpha. This tier ships no screen-reader machinery at all, so that part is yours to build. Accessibility law differs by country and applies to you as the site operator, so check yours first.",
   "type": "module",
   "main": "./shieldfont-encoder.js",
@@ -39,6 +39,7 @@
     "AGENTS.md",
     "LICENSE",
     "LICENSE-FONTS",
+    "LICENSE-OPTIK",
     "NOTICE",
     "README.md",
     "shieldfont-encoder.d.ts"
@@ -51,7 +52,7 @@
     "anti-scraping",
     "woff2"
   ],
-  "license": "AGPL-3.0-or-later",
+  "license": "AGPL-3.0-or-later AND SEE LICENSE IN LICENSE-OPTIK",
   "author": "Isaque Seneda and Gabriel Abrucio",
   "repository": {
     "type": "git",

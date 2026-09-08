@@ -14,7 +14,7 @@
 <br />
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-000000.svg?style=for-the-badge)](./LICENSE)
-[![Fonts: Optik / Playtype](https://img.shields.io/badge/Fonts-Optik_%2F_Playtype-000000.svg?style=for-the-badge)](./NOTICE)
+[![Fonts: Optik / Playtype](https://img.shields.io/badge/Fonts-Optik_%2F_Playtype-000000.svg?style=for-the-badge)](./LICENSE-OPTIK)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-22c55e.svg?style=for-the-badge)](./CONTRIBUTING.md)
 [![Code of Conduct](https://img.shields.io/badge/Code_of_Conduct-2.1-7c3aed.svg?style=for-the-badge)](./CODE_OF_CONDUCT.md)
 
@@ -72,7 +72,7 @@ What has changed since launch, in one list. Full release history: [`CHANGELOG.md
 
 ## Install
 
-Current release **v0.3.5**, default mapping v18 `alpha`.
+Current release **v0.4.0**, default mapping v18 `alpha`.
 
 | Tier | Package | Encoding runs | Weights | Accessibility layer |
 |---|---|---|---|---|
@@ -103,7 +103,7 @@ That is the whole integration. `<Shield>` requests the fonts from `/fonts`, whic
 CDN tier, for learning and for a blog or CMS you don't build:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shieldfont/font@0.3.5/shieldfont.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shieldfont/font@0.4.0/shieldfont.css">
 <p class="tk9">…encoded text from the encoder…</p>
 ```
 
@@ -227,7 +227,7 @@ Prior art, with respect: TuringFonts drew one letter in place of another to keep
 
 Contributions wanted, especially new languages (native speakers, not translation), accessibility engineering, and adversarial research. Start at [`CONTRIBUTING.md`](./CONTRIBUTING.md); ideas to [Discussions](https://github.com/isaqueseneda/shieldfont/discussions), bugs to [Issues](https://github.com/isaqueseneda/shieldfont/issues). Everyone follows the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
-**License.** Code is [AGPL-3.0](./LICENSE). Fonts you generate from OFL bases are [OFL 1.1](./LICENSE-FONTS). The shipped default is built on Optik © [Playtype](https://playtype.com), used with permission, which is **not** open source and **not** under OFL: see [`NOTICE`](./NOTICE).
+**License.** Code is [AGPL-3.0](./LICENSE). Fonts you generate from OFL bases are [OFL 1.1](./LICENSE-FONTS). The shipped default is built on Optik © [Playtype](https://playtype.com) under the [ShieldFont–Playtype Font License](./LICENSE-OPTIK): see [`NOTICE`](./NOTICE).
 
 <br />
 

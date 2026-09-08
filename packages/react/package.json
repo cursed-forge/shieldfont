@@ -1,7 +1,7 @@
 {
   "//": "On the wording of commit 50311c1, see the message of the commit that added this line.",
   "name": "@shieldfont/react",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "description": "ShieldFont React component. Encodes in Node, so your original text never ships in plain form. Screen readers get the real text: every protected block carries a visible notice with a button that shows it, on by default, tested with NVDA and VoiceOver. A v0 alpha. Accessibility law differs by country and applies to you as the site operator, so check yours first.",
   "type": "module",
   "main": "./dist/index.js",
@@ -21,6 +21,7 @@
     "AGENTS.md",
     "LICENSE",
     "LICENSE-FONTS",
+    "LICENSE-OPTIK",
     "NOTICE"
   ],
   "scripts": {
@@ -34,7 +35,7 @@
     "server-component",
     "anti-scraping"
   ],
-  "license": "AGPL-3.0-or-later",
+  "license": "AGPL-3.0-or-later AND SEE LICENSE IN LICENSE-OPTIK",
   "author": "Isaque Seneda and Gabriel Abrucio",
   "repository": {
     "type": "git",
@@ -45,7 +46,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@shieldfont/core": "^0.3.5"
+    "@shieldfont/core": "^0.4.0"
   },
   "peerDependencies": {
     "react": ">=18.0.0"

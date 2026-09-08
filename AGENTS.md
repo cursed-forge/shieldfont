@@ -231,16 +231,17 @@ pin the version: never `@latest` (a silent mapping update would break existing
 encoded content):
 
 ```html
-<!-- GOOD --> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shieldfont/font@0.3.5/shieldfont.css">
+<!-- GOOD --> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shieldfont/font@0.4.0/shieldfont.css">
 <!-- BAD  --> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shieldfont/font@latest/shieldfont.css">
 ```
 
 ## Font licensing note
 
-The default variants render through **Optik (© Playtype)**, used in ShieldFont's
-shielded form **with Playtype's permission**. Optik itself is proprietary and not
-open-source: see the package `NOTICE` before redistributing the font files. This
-does not affect using the packages in your own project.
+The default variants render through **Optik (© Playtype)** under the
+ShieldFont–Playtype Font License: see `LICENSE-OPTIK` before redistributing
+the font files. The outlines may only be used inside the ShieldFont packages
+(LICENSE-OPTIK clause 1). This does not affect using the packages in your
+own project.
 
 ## Resources
 

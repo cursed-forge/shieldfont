@@ -12,6 +12,36 @@ now — accessibility in particular — read the
 
 ---
 
+## [0.4.0] — 2026-09-08
+
+The shipped Optik fonts move off the retail Playtype EULA onto a license
+written for ShieldFont. No API changed, no font renamed, no dictionary
+changed.
+
+### Changed
+
+- **The default variants are now distributed under the ShieldFont–Playtype
+  Font License (LICENSE-OPTIK).** Playtype approved the text. "Optik" is a
+  Reserved Font Name of Playtype; the ShieldFont packages use it under
+  Playtype's written permission. The outlines may be used only inside the
+  ShieldFont packages (clause 1). They are NOT released under the SIL Open
+  Font License, and LICENSE-FONTS covers only fonts you build yourself from
+  the OFL base fonts.
+- **Every shipped font now carries its license inside it.** The woff2 files
+  in @shieldfont/font and @shieldfont/react record the license notice
+  (nameID 13/14) and the copyright line "Copyright 2026 Optik Playtype"
+  (nameID 0), replacing the Playtype EULA URL. Neutral family names,
+  filenames and concealment behaviour are unchanged.
+- **scripts/generate_font.py** accepts `--license-text` and `--license-url`
+  so future Optik builds stamp the LICENSE-OPTIK notice at build time.
+- The npm `license` field of @shieldfont/font and @shieldfont/react is now
+  `AGPL-3.0-or-later AND SEE LICENSE IN LICENSE-OPTIK`.
+
+Versions 0.3.5 and earlier stay on npm and jsDelivr with the old EULA
+metadata inside the files; a site pinned to @0.3.5 keeps the old files.
+
+---
+
 ## [0.3.5] — 2026-08-16
 
 A documentation and wording release, plus one behavioural fix each for readers
